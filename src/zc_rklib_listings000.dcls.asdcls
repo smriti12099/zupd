@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_RKLIB_LISTINGS000'
+@MappingRole: true
+define role ZC_RKLIB_LISTINGS000 {
+  grant select on ZC_RKLIB_LISTINGS000
+  where INHERITING CONDITIONS FROM ENTITY ZR_RKLIB_LISTINGS REPLACING { ROOT WITH _BaseEntity };
+}

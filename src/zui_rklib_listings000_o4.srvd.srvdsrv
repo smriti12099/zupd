@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_RKLIB_LISTINGS000'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_RKLIB_LISTINGS000'
+  }
+}
+define service ZUI_RKLIB_LISTINGS000_O4 provider contracts odata_v4_ui {
+  expose ZC_RKLIB_LISTINGS000;
+}

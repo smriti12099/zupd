@@ -1,0 +1,62 @@
+managed implementation in class ZBP_R_RKLIB_LISTINGS unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_RKLIB_LISTINGS alias ZrRklibListings
+persistent table ZRK_LIB_LISTINGS
+extensible
+draft table ZRKLIB_LSTINGS_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+{
+  field ( readonly )
+   ListingUUID,
+   LocalCreatedBy,
+   LocalCreatedAt,
+   LocalLastChangedBy,
+   LocalLastChangedAt,
+   LastChangedAt;
+
+  field ( numbering : managed )
+   ListingUUID;
+
+
+  create;
+  update;
+  delete;
+
+ static action ExcelUpload deep parameter ZRK_D_UPLOAD_EXCEL;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZRK_LIB_LISTINGS corresponding extensible
+  {
+    ListingUUID = listing_uuid;
+    ID = id;
+    Title = title;
+    Type = type;
+    Author = author;
+    PublisherStudio = publisher_studio;
+    IsbnEan = isbn_ean;
+    LanguageCode = language_code;
+    PublicationYear = publication_year;
+    Description = description;
+    Totalcopies = totalcopies;
+    AvailableCopies = available_copies;
+    LocationShelfID = location_shelf_id;
+    LendingDurationDays = lending_duration_days;
+    Status = status;
+    CoverImageUrl = cover_image_url;
+    LocalCreatedBy = local_created_by;
+    LocalCreatedAt = local_created_at;
+    LocalLastChangedBy = local_last_changed_by;
+    LocalLastChangedAt = local_last_changed_at;
+    LastChangedAt = last_changed_at;
+  }
+
+}

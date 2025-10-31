@@ -1,0 +1,310 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'ListingUUID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'ListingUUID'
+annotate view ZC_RKLIB_LISTINGS000 with
+{
+  @EndUserText.label: 'ListingUUID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'ListingUUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'ListingUUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  ListingUUID;
+  
+  @EndUserText.label: 'ID'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'ID'
+  } ]
+  
+  @UI.lineItem: [
+  { position: 20, label: 'Idsss' },
+  { type:#FOR_ACTION , dataAction: 'ExcelUpload' , label: 'Upload Excel' }]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ID;
+  
+  
+
+  
+  @EndUserText.label: 'Title'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Title'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Title'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  Title;
+  
+  @EndUserText.label: 'Type'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Type'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Type'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Type;
+  
+  @EndUserText.label: 'Author'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Author'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Author'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Author;
+  
+  @EndUserText.label: 'PublisherStudio'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'PublisherStudio'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'PublisherStudio'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  PublisherStudio;
+  
+  @EndUserText.label: 'IsbnEan'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'IsbnEan'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'IsbnEan'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  IsbnEan;
+  
+  @EndUserText.label: 'LanguageCode'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'LanguageCode'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'LanguageCode'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  LanguageCode;
+  
+  @EndUserText.label: 'PublicationYear'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'PublicationYear'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'PublicationYear'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  PublicationYear;
+  
+  @EndUserText.label: 'Description'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'Description'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'Description'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  Description;
+  
+  @EndUserText.label: 'Totalcopies'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'Totalcopies'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'Totalcopies'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  Totalcopies;
+  
+  @EndUserText.label: 'AvailableCopies'
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'AvailableCopies'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'AvailableCopies'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  AvailableCopies;
+  
+  @EndUserText.label: 'LocationShelfID'
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'LocationShelfID'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'LocationShelfID'
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  LocationShelfID;
+  
+  @EndUserText.label: 'LendingDurationDays'
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'LendingDurationDays'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 , 
+    label: 'LendingDurationDays'
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  LendingDurationDays;
+  
+  @EndUserText.label: 'Status'
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'Status'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 , 
+    label: 'Status'
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  Status;
+  
+  @EndUserText.label: 'CoverImageUrl'
+  @UI.identification: [ {
+    position: 160 , 
+    label: 'CoverImageUrl'
+  } ]
+  @UI.lineItem: [ {
+    position: 160 , 
+    label: 'CoverImageUrl'
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  CoverImageUrl;
+  
+  @UI.identification: [ {
+    position: 170 
+  } ]
+  @UI.lineItem: [ {
+    position: 170 
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  LocalCreatedBy;
+  
+  @UI.identification: [ {
+    position: 180 
+  } ]
+  @UI.lineItem: [ {
+    position: 180 
+  } ]
+  @UI.selectionField: [ {
+    position: 180 
+  } ]
+  LocalCreatedAt;
+  
+  @UI.identification: [ {
+    position: 190 
+  } ]
+  @UI.lineItem: [ {
+    position: 190 
+  } ]
+  @UI.selectionField: [ {
+    position: 190 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 200 
+  } ]
+  @UI.lineItem: [ {
+    position: 200 
+  } ]
+  @UI.selectionField: [ {
+    position: 200 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 210 
+  } ]
+  @UI.lineItem: [ {
+    position: 210 
+  } ]
+  @UI.selectionField: [ {
+    position: 210 
+  } ]
+  LastChangedAt;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 220 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 220 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 220 
+  } ]
+  _BaseEntity;
+}
